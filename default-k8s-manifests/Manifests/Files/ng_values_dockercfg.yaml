@@ -1,7 +1,7 @@
 name: harness-quickstart
 replicas: 4
 
-image: nginx:latest
+image: <+artifact.image>
 dockercfg: <+artifact.imagePullSecret>
 
 createNamespace: true
