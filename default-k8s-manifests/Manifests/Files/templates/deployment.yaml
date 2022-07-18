@@ -12,7 +12,7 @@ data:
 apiVersion: v1
 kind: Secret
 metadata:
-  name: {{.Values.name}}
+  name: test-secret
 stringData:
 {{.Values.env.secrets | toYaml | indent 2}}
 ---
