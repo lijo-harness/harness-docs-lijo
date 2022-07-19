@@ -60,6 +60,6 @@ spec:
         {{- end}}
         {{- if .Values.env.secrets}}
         - secretRef:
-            name: test-secret
+            name: {{.Values.name}}
         {{- end}}
         {{- end}}
