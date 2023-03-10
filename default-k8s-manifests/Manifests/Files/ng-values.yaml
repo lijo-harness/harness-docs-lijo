@@ -2,7 +2,7 @@ name: example
 replicas: 2
 
 image: nginx
-# dockercfg: <+artifact.imagePullSecret>
+
 
 createNamespace: true
 namespace: delete-lijo
