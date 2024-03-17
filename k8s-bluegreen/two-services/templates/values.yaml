@@ -1,7 +1,8 @@
-name: nginx
+name: myapp
 replicas: 2
 
-image: nginx
+image: <+artifact.image>
+# dockercfg: <+artifact.imagePullSecret>
 
 createNamespace: true
 namespace: <+infra.namespace>
